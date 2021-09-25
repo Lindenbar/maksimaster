@@ -1,0 +1,63 @@
+section {
+    display: inline-block;
+}
+
+.btns_box {
+    display: inline-block;
+    margin-left: 13px;
+}
+
+#plug {
+    width: 48px;
+}
+
+.plusBtn, .minusBtn {
+    border-radius: 3px;
+    border-width: 1px;
+    height: 20px;
+    width: 35px;
+    text-align: center;
+}
+
+.first {
+    margin-bottom: 7px;
+}
+
+.second {
+    margin-right: 7px;
+}
+
+.horizontal_center {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical_center {
+    display: inline-flex;
+    align-items: center;
+}
+
+#spreadsheet button {
+    border-radius: 4px;
+}
+
+#spreadsheet table {
+    border-collapse: collapse;
+    border: black solid 1px;
+}
+
+#spreadsheet input {
+    font-size: 16px;
+    height: 30px;
+    border-radius: 0;
+    border-width: 0.5px;
+}
+
+#spreadsheet td {
+    padding: 0;
+}
+
+[oneRowAction] {
+    margin-top: 13px;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Гостевая книга</title>
+    <link rel="stylesheet" type="text/css" href="guestbook_style.css">
+    <script>
+        if(typeof window.history.pushState == 'function') {
+            window.history.pushState({}, "Hide", "<?php echo $_SERVER['PHP_SELF'];?>");
+        }
+    </script>
+</head>
+<body>
+    <section id="guestbook">
+        <div id="comments"></div>
+        <hr>
+        <form method="get">
+            <input type="text" placeholder="Имя" name="name">
+            <div id="centerBox">
+                <textarea placeholder="Ваше сообщение" name="text"></textarea>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </section>
+</body>
+<footer>
+    <script type="text/javascript" src="create_comment.js"></script>
+</footer>
+</html>

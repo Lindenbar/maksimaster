@@ -1,0 +1,22 @@
+#random_color {
+    width: 30%;
+}
+
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+}
+
+label {
+    float: right;
+}
+
+#figure {
+    border: black solid 1px;
+    border-radius: 7px;
+    margin:0 auto;
+}

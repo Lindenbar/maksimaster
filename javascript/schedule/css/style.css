@@ -1,0 +1,9 @@
+#schedule_box {
+    width: 30%;
+}
+
+#requests_status {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}

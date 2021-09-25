@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица товаров</title>
+    <script type="text/javascript" src="js/get_json.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="goods_table">
+        <div>
+            <label>Цена от:
+                <input id="min_price" type="number" min="0">
+            </label>
+            <label>до:
+                <input id="max_price" type="number" min="0">
+            </label>
+            <button onclick="create_table_body();">Обновить</button>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr id="table_head">
+                        <th>ID</th>
+                        <th>Название</th>
+                        <th>Количество</th>
+                        <th>Цена за еденицу</th>
+                        <th>Сумма</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </section>
+</body>
+<footer>
+    <script type="text/javascript" src="js/price_sort.js"></script>
+    <script type="text/javascript" src="js/create_table_body.js"></script>
+</footer>
+</html>

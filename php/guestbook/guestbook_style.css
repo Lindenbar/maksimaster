@@ -1,0 +1,52 @@
+#guestbook {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.commBox {
+    justify-content: space-between;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#comments {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.nameBox, .dateBox {
+    width: 50%;
+}
+
+.nameBox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textBox {
+    margin-top: 5px;
+}
+
+#centerBox {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+#centerBox textarea {
+    min-width: 100%;
+}
+
+.commBox, #guestbook input, #centerBox textarea {
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+

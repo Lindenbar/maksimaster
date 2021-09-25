@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>График загруженности процессора</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"></script>
+</head>
+<body>
+    <section id="schedule_box">
+        <canvas id="myChart"></canvas>
+        <div id="requests_status">
+            <label>Количество запросов:
+                <label id="requests">0</label>
+            </label>
+            <label>Ошибки запросов:
+                <label id="bad_requests">0%</label>
+            </label>
+        </div>
+    </section>
+</body>
+<footer>
+    <script type="text/javascript" src="js/build_schedule.js"></script>
+    <script type="text/javascript" src="js/count_requests.js"></script>
+    <script type="text/javascript" src="js/update_schedule.js"></script>
+</footer>
+</html>

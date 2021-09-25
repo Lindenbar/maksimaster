@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор доставки</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="my_form">
+        <select>
+            <?php
+                $cities = explode(PHP_EOL, trim(file_get_contents($cacheFile)));
+                foreach ($cities as $city) {
+                    if ($city == "Москва") {
+                        echo "<option selected='selected'>$city</option>";
+                    } else {
+                        echo "<option>$city</option>";
+                    }
+                }
+            ?>
+        </select>
+        <br>
+        <input type="number" placeholder="Вес, кг" min="0">
+        <br>
+        <button type="submit">Рассчитать</button>
+    </form>
+    <div id="result"></div>
+</body>
+<footer>
+    <script type="text/javascript" src="ajaxCalc.js"></script>
+</footer>
+</html>

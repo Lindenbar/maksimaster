@@ -1,0 +1,47 @@
+#goods_table {
+    width: 50%;
+}
+
+th {
+    background-color: #cccccc;
+    text-align: left;
+}
+
+table {
+    table-layout: fixed;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+    width: 5%;
+}
+
+thead th:nth-child(2) {
+    width: 45%;
+}
+
+thead th:nth-child(3) {
+    width: 22%;
+}
+
+thead th:nth-child(4) {
+    width: 16%;
+}
+
+thead th:nth-child(4) {
+    width: 16%;
+}
+
+
+tr {
+    border: black solid 1px;
+}
+
+th, td {
+    padding: 7px;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Электронная таблица</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section id="spreadsheet">
+        <div class="vertical_center">
+            <div contenteditable="true">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="vertical_center">
+                <div class="btns_box">
+                    <button id="addColumnBtn" class="plusBtn">+</button>
+                    <br>
+                    <button id="removeColumnBtn" class="minusBtn">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal_center">
+            <div class="btns_box">
+                <button id="addRowBtn" class="plusBtn">+</button><!--white space--><button id="removeRowBtn" class="minusBtn">-</button>
+            </div><!--white space--><div id="plug"></div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script type="text/javascript" src="js/local_storage_save_load.js"></script>
+    <script type="text/javascript" src="js/table_manipulate.js"></script>
+    <script type="text/javascript" src="js/set_actions.js"></script>
+</footer>
+</html>

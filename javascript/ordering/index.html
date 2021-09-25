@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="css/validator_style.css">
+    <link rel="stylesheet" href="css/structure_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d2ccaf28-477b-4569-a073-d67cf062434a&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <section id="ordering">
+        <form>
+            <div class="flex_between input_div">
+                <input id="name" type="text" placeholder="ФИО" oninput="validate(this)" required>
+                <span class="validator" valid="unknown"></span>
+            </div>
+            <div class="flex_between input_div">
+                <input id="phone" type="tel" placeholder="Телефон" oninput="validate(this)" required>
+                <span class="validator" valid="unknown"></span>
+            </div>
+            <div class="flex_between input_div">
+                <input id="email" type="email" placeholder="Email" oninput="validate(this)">
+                <span class="validator" valid="unknown"></span>
+            </div>
+            <div id="map" class="flex_center" style="height: 300px">
+                <input required style="position: absolute; top: -9999px; left: -9999px;">
+            </div>
+            <div class="flex_center">
+                <textarea placeholder="Комментарий к заказу (макс. 500 символов)" maxlength="500"></textarea>
+            </div>
+            <div class="flex_center">
+                <button id="send_btn">Отправить</button>
+            </div>
+            <div id="message"></div>
+        </form>
+    </section>
+</body>
+<footer>
+    <script type="text/javascript" src="js/yandex_map.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+</footer>
+</html>

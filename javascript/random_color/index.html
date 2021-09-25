@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Случайный цвет</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="random_color">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="figure_width">Ширина:</label>
+                    </td>
+                    <td>
+                        <input type="number" min="0" id="figure_width" placeholder="100" onchange="change_figure_width(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="figure_height">Высота:</label>
+                    </td>
+                    <td>
+                        <input type="number" min="0" id="figure_height" placeholder="100" onchange="change_figure_height(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button onclick="change_figure_color()">Случайный цвет</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div id="figure"></div>
+    </section>
+</body>
+<footer>
+    <script type="text/javascript" src="js/set_default_figure_size.js"></script>
+    <script type="text/javascript" src="js/change_figure_size.js"></script>
+    <script type="text/javascript" src="js/change_figure_color.js"></script>
+</footer>
+</html>

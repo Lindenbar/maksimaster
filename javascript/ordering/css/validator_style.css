@@ -1,0 +1,43 @@
+.validator {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/validator.png") no-repeat;
+    vertical-align: middle;
+}
+
+.validator[valid="unknown"] {
+    visibility: hidden;
+}
+
+.validator[valid="true"] {
+    visibility: visible;
+}
+
+.validator[valid="false"] {
+    background-position: -15.9px;
+    visibility: visible;
+}
+
+#map {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#send_btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.error_message {
+    color: #e90b0b;
+}
+
+.linked:hover {
+    color: #7e0808;
+}
+
